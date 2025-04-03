@@ -1,0 +1,423 @@
+/* Styles pour la section du calendrier et des résultats */
+
+.calendar-section {
+  background-color: var(--f1-dark);
+  position: relative;
+}
+
+.calendar-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://www.formula1.com/content/dam/fom-website/manual/Misc/2022manual/WinterFebruary/F1_Grid_2022.jpg.transform/9col/image.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.1;
+  z-index: 0;
+}
+
+.calendar-container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Filtres et navigation */
+.calendar-filters {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.filter-btn {
+  background-color: var(--f1-gray);
+  color: var(--f1-light);
+  border: none;
+  padding: 0.6rem 1.5rem;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all var(--transition-speed) ease;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background-color: var(--f1-red);
+  box-shadow: 0 0 15px var(--glow-color);
+  transform: translateY(-2px);
+}
+
+/* Grille des courses */
+.races-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.race-card {
+  background: linear-gradient(
+    145deg,
+    rgba(35, 35, 45, 0.9),
+    rgba(25, 25, 35, 0.9)
+  );
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform var(--transition-speed) ease,
+    box-shadow var(--transition-speed) ease;
+  position: relative;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.race-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3), 0 0 15px var(--glow-color);
+}
+
+.race-image {
+  height: 180px;
+  overflow: hidden;
+  position: relative;
+}
+
+.race-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.race-card:hover .race-image img {
+  transform: scale(1.05);
+}
+
+.race-date {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background-color: var(--f1-red);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-weight: bold;
+  box-shadow: 0 0 10px var(--glow-color);
+}
+
+.race-content {
+  padding: 1.5rem;
+}
+
+.race-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0 0 0.5rem;
+}
+
+.race-location {
+  font-size: 1rem;
+  color: #ccc;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.race-location::before {
+  content: "📍";
+  margin-right: 0.5rem;
+}
+
+.race-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.race-info-item {
+  margin-bottom: 0.8rem;
+}
+
+.race-info-label {
+  font-size: 0.8rem;
+  color: #ccc;
+  margin-bottom: 0.2rem;
+  text-transform: uppercase;
+}
+
+.race-info-value {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.race-status {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.status-upcoming {
+  background-color: #3498db;
+  color: white;
+}
+
+.status-live {
+  background-color: #e74c3c;
+  color: white;
+  animation: pulse 1.5s infinite;
+}
+
+.status-completed {
+  background-color: #2ecc71;
+  color: white;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(231, 76, 60, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(231, 76, 60, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(231, 76, 60, 0);
+  }
+}
+
+/* Tableau des résultats */
+.results-table-container {
+  overflow-x: auto;
+  margin-top: 2rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.results-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: linear-gradient(
+    145deg,
+    rgba(35, 35, 45, 0.9),
+    rgba(25, 25, 35, 0.9)
+  );
+  overflow: hidden;
+}
+
+.results-table th,
+.results-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.results-table th {
+  background-color: var(--f1-gray);
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+}
+
+.results-table tr:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.results-table tr:last-child td {
+  border-bottom: none;
+}
+
+.position {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.position-1,
+.position-2,
+.position-3 {
+  font-size: 1.4rem;
+}
+
+.position-1 {
+  color: gold;
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.7);
+}
+
+.position-2 {
+  color: silver;
+  text-shadow: 0 0 10px rgba(192, 192, 192, 0.7);
+}
+
+.position-3 {
+  color: #cd7f32; /* bronze */
+  text-shadow: 0 0 10px rgba(205, 127, 50, 0.7);
+}
+
+.driver-cell {
+  display: flex;
+  align-items: center;
+}
+
+.driver-cell img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 0.8rem;
+  object-fit: cover;
+}
+
+.team-color {
+  display: inline-block;
+  width: 4px;
+  height: 20px;
+  margin-right: 10px;
+  border-radius: 2px;
+}
+
+/* Circuit détaillé */
+.circuit-detail {
+  padding-top: 100px;
+}
+
+.circuit-banner {
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 3rem;
+}
+
+.circuit-banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent, rgba(21, 21, 30, 0.9));
+}
+
+.circuit-banner-content {
+  position: relative;
+  z-index: 1;
+  padding: 2rem 5%;
+  width: 100%;
+}
+
+.circuit-banner-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+}
+
+.circuit-banner-content p {
+  font-size: 1.2rem;
+  margin: 0.5rem 0 0;
+  max-width: 600px;
+}
+
+.circuit-info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.circuit-map {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  height: 400px;
+  transition: box-shadow var(--transition-speed) ease;
+}
+
+.circuit-map:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3), 0 0 15px var(--glow-color);
+}
+
+.circuit-map img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.circuit-details {
+  background: linear-gradient(
+    145deg,
+    rgba(35, 35, 45, 0.9),
+    rgba(25, 25, 35, 0.9)
+  );
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.circuit-stat {
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.circuit-stat:last-child {
+  margin-bottom: 0;
+}
+
+.circuit-stat-icon {
+  width: 40px;
+  height: 40px;
+  background-color: var(--f1-red);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+  box-shadow: 0 0 10px var(--glow-color);
+}
+
+.circuit-stat-content {
+  flex: 1;
+}
+
+.circuit-stat-label {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-bottom: 0.2rem;
+}
+
+.circuit-stat-value {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .races-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .circuit-info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .circuit-banner-content h1 {
+    font-size: 2rem;
+  }
+
+  .results-table th,
+  .results-table td {
+    padding: 0.8rem 0.5rem;
+    font-size: 0.9rem;
+  }
+}

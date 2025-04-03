@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formula 1 - Classements</title>
+    <meta
+      name="description"
+      content="Consultez les classements des pilotes et des constructeurs du championnat du monde de Formule 1."
+    />
+    <link rel="stylesheet" href="../CSS/reset.css" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/standings.css" />
+    <link rel="stylesheet" href="../CSS/animations.css" />
+    <link rel="stylesheet" href="../CSS/footer.css" />
+    <link rel="icon" href="../Assets/Images/Logo_F1.png" type="image/png" />
+  </head>
+  <body>
+    <!-- Header et Navigation -->
+    <header>
+      <div class="header-container">
+        <a href="../index.html" class="logo">
+          <img src="../Assets/Images/Logo_F1.png" alt="Formula 1 Logo" />
+        </a>
+        <nav>
+          <ul>
+            <li><a href="teams.html">Équipes</a></li>
+            <li><a href="calendar.html">Calendrier</a></li>
+            <li><a href="standings.html">Classements</a></li>
+            <li><a href="../index.html#news">Actualités</a></li>
+          </ul>
+        </nav>
+        <button class="mobile-menu-btn">
+          <span>&#9776;</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" style="height: 60vh">
+      <div class="hero-content">
+        <h1 class="fade-in">Classements</h1>
+        <p class="fade-in delay-1">
+          Suivez les performances des pilotes et des équipes tout au long de la
+          saison 2024.
+        </p>
+      </div>
+    </section>
+
+    <!-- Section Classements -->
+    <section class="standings-section">
+      <div class="container standings-container">
+        <div class="section-title">
+          <h2>Classements 2024</h2>
+        </div>
+        <div class="standings-tabs">
+          <button class="tab-btn active">Pilotes</button>
+          <button class="tab-btn">Constructeurs</button>
+        </div>
+
+        <!-- Classement Pilotes -->
+        <div class="tab-content active">
+          <div class="standings-table-container animate-on-scroll">
+            <table class="standings-table">
+              <thead>
+                <tr>
+                  <th>Pos</th>
+                  <th>Pilote</th>
+                  <th>Équipe</th>
+                  <th>Points</th>
+                  <th>Victoires</th>
+                  <th>Podiums</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="position-cell position-1">1</td>
+                  <td class="driver-cell">
+                    <img
+                      src="../Assets/Images/Team/Oracle Redbull Racing/Max Verstappen/Max_Verstappen_Portrait_1.png"
+                      alt="Max Verstappen"
+                    />
+                    <span>Max Verstappen</span>
+                  </td>
+                  <td class="team-cell">
+                    <span
+                      class="team-color"
+                      style="background-color: #0600ef"
+                    ></span>
+                    <span>Red Bull Racing</span>
+                  </td>
+                  <td class="points-cell">575</td>
+                  <td>18</td>
+                  <td>21</td>
+                </tr>
+                <tr>
+                  <td class="position-cell position-2">2</td>
+                  <td class="driver-cell">
+                    <img
+                      src="../Assets/Images/Team/McLaren Racing/Lando Norris/Lando_Norris_Portrait_1.png"
+                      alt="Lando Norris"
+                    />
+                    <span>Lando Norris</span>
+                  </td>
+                  <td class="team-cell">
+                    <span
+                      class="team-color"
+                      style="background-color: #ff8700"
+                    ></span>
+                    <span>McLaren</span>
+                  </td>
+                  <td class="points-cell">425</td>
+                  <td>2</td>
+                  <td>12</td>
+                </tr>
+                <tr>
+                  <td class="position-cell position-3">3</td>
+                  <td class="driver-cell">
+                    <img
+                      src="../Assets/Images/Team/Scuderia Ferrari/Charles Leclerc/Charles Leclerc Portrait 1.png"
+                      alt="Charles Leclerc"
+                    />
+                    <span>Charles Leclerc</span>
+                  </td>
+                  <td class="team-cell">
+                    <span
+                      class="team-color"
+                      style="background-color: #dc0000"
+                    ></span>
+                    <span>Ferrari</span>
+                  </td>
+                  <td class="points-cell">410</td>
+                  <td>3</td>
+                  <td>9</td>
+                </tr>
+                <tr>
+                  <td class="position-cell">4</td>
+                  <td class="driver-cell">
+                    <img
+                      src="../Assets/Images/Team/McLaren Racing/Oscar Piastri/Oscar_Piastri_Portrait_1.png"
+                      alt="Oscar Piastri"
+                    />
+                    <span>Oscar Piastri</span>
+                  </td>
+                  <td class="team-cell">
+                    <span
+                      class="team-color"
+                      style="background-color: #ff8700"
+                    ></span>
+                    <span>McLaren</span>
+                  </td>
+                  <td class="points-cell">380</td>
+                  <td>1</td>
+                  <td>8</td>
+                </tr>
+                <tr>
+                  <td class="position-cell">5</td>
+                  <td class="driver-cell">
+                    <img
+                      src="../Assets/Images/Team/Scuderia Ferrari/Lewis Hamilton/Lewis Hamilton Portrait 1.png"
+                      alt="Lewis Hamilton"
+                    />
+                    <span>Lewis Hamilton</span>
+                  </td>
+                  <td class="team-cell">
+                    <span
+                      class="team-color"
+                      style="background-color: #dc0000"
+                    ></span>
+                    <span>Ferrari</span>
+                  </td>
+                  <td class="points-cell">350</td>
+                  <td>0</td>
+                  <td>6</td>
+                </tr>
+                <tr>
+                  <td class="position-cell">6</td>
+                  <td class="driver-cell">
+                    <img
+                      src="../Assets/Images/Team/Oracle Redbull Racing/Liam Lawson/Liam_Lawson_Portrait_1.png"
+                      alt="Liam Lawson"
+                    />
+                    <span>Liam Lawson</span>
+                  </td>
+                  <td class="team-cell">
+                    <span
+                      class="team-color"
+                      style="background-color: #0600ef"
+                    ></span>
+                    <span>Red Bull Racing</span>
+                  </td>
+                  <td class="points-cell">200</td>
+                  <td>0</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td class="position-cell">7</td>
+                  <td class="driver-cell">
+                    <img
+                      src="../Assets/Images/Team/Mercedes AMG Petronas/George Russell/George_Russell_Portrait_1.png"
+                      alt="George Russell"
+                    />
+                    <span>George Russell</span>
+                  </td>
+                  <td class="team-cell">
+                    <span
+                      class="team-color"
+                      style="background-color: #00d2be"
+                    ></span>
+                    <span>Mercedes</span>
+                  </td>
+                  <td class="points-cell">175</td>
+                  <td>1</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td class="position-cell">8</td>
+                  <td class="driver-cell">
+                    <img
+                      src="../Assets/Images/Team/Aston Martin F1 Team/Fernando Alonso/Fernando_Alonso_Portrait_1.png"
+                      alt="Fernando Alonso"
+                    />
+                    <span>Fernando Alonso</span>
+                  </td>
+                  <td class="team-cell">
+                    <span
+                      class="team-color"
+                      style="background-color: #006f62"
+                    ></span>
+                    <span>Aston Martin</span>
+                  </td>
+                  <td class="points-cell">150</td>
+                  <td>0</td>
+                  <td>1</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Classement Constructeurs -->
+        <div class="tab-content">
+          <div class="standings-table-container animate-on-scroll">
+            <table class="standings-table">
+              <thead>
+                <tr>
+                  <th>Pos</th>
+                  <th>Équipe</th>
+                  <th>Points</th>
+                  <th>Victoires</th>
+                  <th>Podiums</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="position-cell position-1">1</td>
+                  <td class="team-cell">
+                    <img
+                      src="../Assets/Images/Team/Oracle Redbull Racing/Logo_Redbull.png"
+                      alt="Red Bull Racing"
+                    />
+                    <span>Oracle Red Bull Racing</span>
+                  </td>
+                  <td class="points-cell">775</td>
+                  <td>18</td>
+                  <td>24</td>
+                </tr>
+                <tr>
+                  <td class="position-cell position-2">2</td>
+                  <td class="team-cell">
+                    <img
+                      src="../Assets/Images/Team/McLaren Racing/Logo_McLaren.png"
+                      alt="McLaren"
+                    />
+                    <span>McLaren Racing</span>
+                  </td>
+                  <td class="points-cell">805</td>
+                  <td>3</td>
+                  <td>20</td>
+                </tr>
+                <tr>
+                  <td class="position-cell position-3">3</td>
+                  <td class="team-cell">
+                    <img
+                      src="../Assets/Images/Team/Scuderia Ferrari/Logo_Scuderia_Ferrari.png"
+                      alt="Ferrari"
+                    />
+                    <span>Scuderia Ferrari</span>
+                  </td>
+                  <td class="points-cell">760</td>
+                  <td>3</td>
+                  <td>15</td>
+                </tr>
+                <tr>
+                  <td class="position-cell">4</td>
+                  <td class="team-cell">
+                    <img
+                      src="../Assets/Images/Team/Mercedes AMG Petronas/Logo_Mercedes.png"
+                      alt="Mercedes"
+                    />
+                    <span>Mercedes AMG Petronas</span>
+                  </td>
+                  <td class="points-cell">275</td>
+                  <td>1</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td class="position-cell">5</td>
+                  <td class="team-cell">
+                    <img
+                      src="../Assets/Images/Team/Aston Martin F1 Team/Logo_Aston_Martin.png"
+                      alt="Aston Martin"
+                    />
+                    <span>Aston Martin F1 Team</span>
+                  </td>
+                  <td class="points-cell">200</td>
+                  <td>0</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td class="position-cell">6</td>
+                  <td class="team-cell">
+                    <img
+                      src="../Assets/Images/Team/Alpine F1 Team/Logo_Alpine.png"
+                      alt="Alpine"
+                    />
+                    <span>Alpine F1 Team</span>
+                  </td>
+                  <td class="points-cell">120</td>
+                  <td>0</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td class="position-cell">7</td>
+                  <td class="team-cell">
+                    <img
+                      src="../Assets/Images/Team/Racing Bulls/Logo_Racing_Bulls.png"
+                      alt="Racing Bulls"
+                    />
+                    <span>Racing Bulls</span>
+                  </td>
+                  <td class="points-cell">75</td>
+                  <td>0</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td class="position-cell">8</td>
+                  <td class="team-cell">
+                    <img
+                      src="../Assets/Images/Team/Williams Racing/Logo_Williams.png"
+                      alt="Williams"
+                    />
+                    <span>Williams Racing</span>
+                  </td>
+                  <td class="points-cell">25</td>
+                  <td>0</td>
+                  <td>0</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Statistiques -->
+    <section class="stats-section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Statistiques de la saison</h2>
+        </div>
+        <div class="stats-grid">
+          <div class="stat-card animate-on-scroll">
+            <div class="stat-header">
+              <h3 class="stat-title">Meilleurs tours en course</h3>
+            </div>
+            <div class="stat-content">
+              <div class="stat-list">
+                <div class="stat-item">
+                  <div class="stat-rank">1</div>
+                  <div class="stat-driver">
+                    <img
+                      src="../Assets/Images/Team/Oracle Redbull Racing/Max Verstappen/Max_Verstappen_Portrait_1.png"
+                      alt="Max Verstappen"
+                    />
+                    <span>Max Verstappen</span>
+                  </div>
+                  <div class="stat-value">8</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-rank">2</div>
+                  <div class="stat-driver">
+                    <img
+                      src="../Assets/Images/Team/McLaren Racing/Lando Norris/Lando_Norris_Portrait_1.png"
+                      alt="Lando Norris"
+                    />
+                    <span>Lando Norris</span>
+                  </div>
+                  <div class="stat-value">5</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-rank">3</div>
+                  <div class="stat-driver">
+                    <img
+                      src="../Assets/Images/Team/Scuderia Ferrari/Charles Leclerc/Charles Leclerc Portrait 1.png"
+                      alt="Charles Leclerc"
+                    />
+                    <span>Charles Leclerc</span>
+                  </div>
+                  <div class="stat-value">4</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="stat-card animate-on-scroll delay-1">
+            <div class="stat-header">
+              <h3 class="stat-title">Pole positions</h3>
+            </div>
+            <div class="stat-content">
+              <div class="stat-list">
+                <div class="stat-item">
+                  <div class="stat-rank">1</div>
+                  <div class="stat-driver">
+                    <img
+                      src="../Assets/Images/Team/Oracle Redbull Racing/Max Verstappen/Max_Verstappen_Portrait_1.png"
+                      alt="Max Verstappen"
+                    />
+                    <span>Max Verstappen</span>
+                  </div>
+                  <div class="stat-value">12</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-rank">2</div>
+                  <div class="stat-driver">
+                    <img
+                      src="../Assets/Images/Team/Scuderia Ferrari/Charles Leclerc/Charles Leclerc Portrait 1.png"
+                      alt="Charles Leclerc"
+                    />
+                    <span>Charles Leclerc</span>
+                  </div>
+                  <div class="stat-value">5</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-rank">3</div>
+                  <div class="stat-driver">
+                    <img
+                      src="../Assets/Images/Team/McLaren Racing/Lando Norris/Lando_Norris_Portrait_1.png"
+                      alt="Lando Norris"
+                    />
+                    <span>Lando Norris</span>
+                  </div>
+                  <div class="stat-value">3</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="stat-card animate-on-scroll delay-2">
+            <div class="stat-header">
+              <h3 class="stat-title">Tours en tête</h3>
+            </div>
+            <div class="stat-content">
+              <div class="stat-list">
+                <div class="stat-item">
+                  <div class="stat-rank">1</div>
+                  <div class="stat-driver">
+                    <img
+                      src="../Assets/Images/Team/Oracle Redbull Racing/Max Verstappen/Max_Verstappen_Portrait_1.png"
+                      alt="Max Verstappen"
+                    />
+                    <span>Max Verstappen</span>
+                  </div>
+                  <div class="stat-value">723</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-rank">2</div>
+                  <div class="stat-driver">
+                    <img
+                      src="../Assets/Images/Team/McLaren Racing/Lando Norris/Lando_Norris_Portrait_1.png"
+                      alt="Lando Norris"
+                    />
+                    <span>Lando Norris</span>
+                  </div>
+                  <div class="stat-value">156</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-rank">3</div>
+                  <div class="stat-driver">
+                    <img
+                      src="../Assets/Images/Team/Scuderia Ferrari/Charles Leclerc/Charles Leclerc Portrait 1.png"
+                      alt="Charles Leclerc"
+                    />
+                    <span>Charles Leclerc</span>
+                  </div>
+                  <div class="stat-value">112</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <img src="../Assets/Images/Logo_F1.png" alt="Formula 1 Logo" />
+            <p>Le championnat du monde de Formule 1</p>
+          </div>
+          <div class="footer-links">
+            <div class="footer-column">
+              <h3>Navigation</h3>
+              <ul>
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="teams.html">Équipes</a></li>
+                <li><a href="calendar.html">Calendrier</a></li>
+                <li><a href="standings.html">Classements</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h3>Suivez-nous</h3>
+              <div class="social-links">
+                <a href="#" class="social-link">Facebook</a>
+                <a href="#" class="social-link">Twitter</a>
+                <a href="#" class="social-link">Instagram</a>
+                <a href="#" class="social-link">YouTube</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; 2024 Formula One World Championship Limited. Tous droits
+            réservés.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../JavaScript/main.js"></script>
+  </body>
+</html>

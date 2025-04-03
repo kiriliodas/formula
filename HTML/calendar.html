@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formula 1 - Calendrier des Courses</title>
+    <meta name="description" content="Découvrez le calendrier complet des courses de Formule 1 pour la saison 2024.">
+    <link rel="stylesheet" href="../CSS/reset.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/calendar.css">
+    <link rel="stylesheet" href="../CSS/animations.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
+    <link rel="icon" href="../Assets/Images/Logo_F1.png" type="image/png">
+</head>
+<body>
+    <!-- Header et Navigation -->
+    <header>
+        <div class="header-container">
+            <a href="../index.html" class="logo">
+                <img src="../Assets/Images/Logo_F1.png" alt="Formula 1 Logo">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="teams.html">Équipes</a></li>
+                    <li><a href="calendar.html">Calendrier</a></li>
+                    <li><a href="standings.html">Classements</a></li>
+                    <li><a href="../index.html#news">Actualités</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-btn">
+                <span>&#9776;</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" style="height: 60vh;">
+        <div class="hero-content">
+            <h1 class="fade-in">Calendrier 2024</h1>
+            <p class="fade-in delay-1">Suivez toutes les courses de la saison 2024 du Championnat du Monde de Formule 1.</p>
+        </div>
+    </section>
+
+    <!-- Section Calendrier -->
+    <section class="calendar-section">
+        <div class="container calendar-container">
+            <div class="section-title">
+                <h2>Toutes les courses</h2>
+            </div>
+            <div class="calendar-filters">
+                <button class="filter-btn active" data-filter="all">Toutes les courses</button>
+                <button class="filter-btn" data-filter="upcoming">À venir</button>
+                <button class="filter-btn" data-filter="completed">Terminées</button>
+            </div>
+            <div class="races-grid">
+                <!-- Course 1 -->
+                <div class="race-card completed">
+                    <div class="race-image">
+                        <img src="https://www.formula1.com/content/dam/fom-website/2018-redesign-assets/Track%20icons%204x3/Bahrain%20carbon.png.transform/8col/image.png" alt="Circuit de Bahreïn">
+                        <div class="race-date">2-4 Mars 2024</div>
+                        <div class="race-status status-completed">Terminé</div>
+                    </div>
+                    <div class="race-content">
+                        <h3 class="race-name">Grand Prix de Bahreïn</h3>
+                        <p class="race-location">Circuit International de Bahreïn</p>
+                        <div class="race-info">
+                            <div class="race-info-item">
+                                <div class="race-info-label">Tours</div>
+                                <div class="race-info-value">57</div>
+                            </div>
+                            <div class="race-info-item">
+                                <div class="race-info-label">Distance</div>
+                                <div class="race-info-value">308.238 km</div>
+                            </div>
+                            <div class="race-info-item">
+                                <div class="race-info-label">Vainqueur</div>
+                                <div class="race-info-value">M. Verstappen</div>
+                            </div>
+                            <div class="race-info-item">
+                                <div class="race-info-label">Meilleur tour</div>
+                                <div class="race-info-value">1:31.447</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 2 -->
+                <div class="race-card completed">
+                    <div class="race-image">
+                        <img src="https://www.formula1.com/content/dam/fom-website/2018-redesign-assets/Track%20icons%204x3/Saudi%20Arabia%20carbon.png.transform/8col/image.png" alt="Circuit de Jeddah">
+                        <div class="race-date">9-11 Mars 2024</div>
+                        <div class="race-status status-completed">Terminé</div>
+                    </div>
+                    <div class="race-content">
+                        <h3 class="race-name">Grand Prix d'Arabie Saoudite</h3>
+                        <p class="race-location">Circuit de la Corniche de Jeddah</p>
+                        <div class="race-info">
+                            <div class="race-info-item">
+                                <div class="race-info-label">Tours</div>
+                                <div class="race-info-value">50</div>
+                            </div>
+                            <div class="race-info-item">
+                                <div class="race-info-label">Distance</div>
+                                <div class="race-info-value">308.450 km</div>
+                            </div>
+                            <div class="race-info-item">
+                                <div class="race-info-label">Vainqueur</div>
+                                <div class="race-info-value">C. Leclerc</div>
+                            </div>
+                            <div class="race-info-item">
+                                <div class="race-info-label">Meilleur tour</div>
+                                <div class="race-info-value">1:30.734</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 3 -->
+                <div class="race-card completed">
+                    <div class="race-image">
+                        <img src="https://www.formula1.com/content/dam/fom-website/2018-redesign-assets/Track%20icons%204x3/Australia%20carbon.png.transform/8col/image.png" alt="Circuit d'Albert Park">
+                        <div class="race-date">23-25 Mars 2024</div>
+                        <div class="race-status status-completed">Terminé</div>
+                    </div>
+                    <div class="race-content">
+                        <h3 class="race-name">Grand Prix d'Australie</h3>
+                        <p class="race-location">Circuit d'Albert Park</p>
+                        <div class="race-info">
+                            <div class="race-info-item">
+                                <div class="race-info-label">Tours</div>
+                                <div class="race-info-value">58</div>
+                            </div>
+                            <div class="race-info-item">
+                                <div class="race-info-label">Distance</div>
+                                <div class="race-info-value">306.124 km</div>
+                            </div>
+                            <div class="race-info-item">
+                                <div class="race-info-label">Vainqueur</div>
+                                <div class="race-info-value">L. Norris</div>
+                            </div>
+                            <div class="race-info-item">
+                                <div class="race-info-label">Meilleur tour</div>
+                                <div class="race-info-value">1:20.235</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 4 -->
+                <div class="race-card completed">
+                    <div class="race-image">
+                        <img src="https://www.formula1.com/content/dam/fom-website/2018-redesign-assets/Track%20icons%204x3/Japan%20carbon.png.transform/8col/image.png" alt="Circuit de Suzuka">
+                        <div class="race-date">5-7 Avril 2024</div>
+                        <div class="race-status status-completed">Terminé</div>
+                    </div>
+                    <div class="race-content">
+                        <h3 class="race-name">Grand Prix du Japon</h3>
+                        <p class="race-location">Circuit de Suzuka</p>
+                        <div class="race-info">
+                            <div class="race-info-item">
+                                <div class="race-info-label">Tours</div>
+                                <div class="race-info-value">53</div>
+                            </div>
+                            <div class="race-info-item">
+                                <div class="race-info-label">Distance</div>
+                                <div class="race-info-value">307.471 km</div>
+                            </div>
+                            <div class="race-info-item">
+                                <div class="race-info-label">Vainqueur</div>
+                                <div class="race-info-value">M. Verstappen</div>
+                            </div>
+                            <div class="race-info-item">
+                                <div class="race-info-label">Meilleur tour</div>
+                                <div class="race-info-value">1:34.148</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 5 -->
+                <div class="race-card upcoming">
+                    <div class="race-image">
+                        <img src="https://www.formula1.com/content/dam/fom-website/2018-redesign-assets/Track%20icons%204x3/China%20carbon.png.transform/8col/image.png" alt="Circuit International de Shanghai">
+                        <div class="race-date">19-21 Avril 2024</div>
+                        <div class="race-status status-upcoming">À venir</div>
+                    </div>
+                    <div class="race-content">
+                        <h3 class="race-name">Grand Prix de Chine</h3>
+                        <p class="race-location">Circuit International de Shanghai</p>
+                        <div class="race-info">
+                            <div class="race-info-item">
+                                <div class="race-info-label">Tours</div>
+                                <div class="race-info-value">56</div>
+                            </div>
+                            <div class="race-info-item">
+                                <div class="race-info-label">Distance</div>
+                                <div class="race-info-value">305.066 km</div>
+                            </div>
+                            <div class="race-info-item">
+                                <div class="race-info-label">Vainqueur 2023</div>
+                                <div class="race-info-value">N/A</div>
+                            </div>
+                            <div class="race-info-item">
+                                <div class="race-info-label">Record du tour</div>
+                                <div class="race-info-value">1:32.238</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 6 -->
+                <div class="race-card upcoming">
+                    <div class="race-image">
+                        <img src="https://www.formula1.com/content/dam/fom-website/2018-redesign-assets/Track%20icons%204x3/Miami%20carbon.png.transform/8col/image.png" alt="Miami International Autodrome">
+                        <div class="race-date">3-5 Mai 2024</div>
+                        <div class="race-status status-upcoming">À venir</div>
+                    </div>
+                    <div class="race-content">
+                        <h3 class="race-name">Grand Prix de Miami</h3>
+                        <p class="race-location">Miami International Autodrome</p>
+                        <div class="race-info">
+                            <div class="race-info-item">
+                                <div class="race-info-label">Tours</div>
+                                <div class="race-info-value">57</div>
+                            </div>
+                            <div class="race-info-item">
+                                <div class="race-info-label">Distance</div>
+                                <div class="race-info-value">308.326 km</div>
+                            </div>
+                            <div class="race-info-item">
+                                <div class="race-info-label">Vainqueur 2023</div>
+                                <div class="race-info-value">M. Verstappen</div>
+                            </div>
+                            <div class="race-info-item">
+                                <div class="race-info-label">Record du tour</div>
+                                <div class="race-info-value">1:29.708</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 7 -->
+                <div class="race-card upcoming">
+                    <div class="race-image">
+                        <img src="https://www.formula1.com/content/dam/fom-website/2018-redesign-assets/Track%20icons%204x3/Emilia%20Romagna%20carbon.png.transform/8col/image.png" alt="Autodromo Enzo e Dino Ferrari">
+                        <div class="race-date">17-19 Mai 2024</div>
+                        <div class="race-status status-upcoming">À venir</div>
+                    </div>
+                    <div class="race-content">
+                        <h3 class="race-name">Grand Prix d'Émilie-Romagne</h3>
+                        <p class="race-location">Autodromo Enzo e Dino Ferrari</p>
+                        <div class="race-info">
+                            <div class="race-info-item">
+                                <div class="race-info-label">Tours</div>
+                                <div class="race-info-value">63</div>
+                            </div>
+                            <div class="race-info-item">
+                                <div class="race-info-label">Distance</div>
+                                <div class="race-info-value">309.049 km</div>
+                            </div>
+                            <div class="race-info-item">
+                                <div class="race-info-label">Vainqueur 2023</div>
+                                <div class="race-info-value">N/A</div>
+                            </div>
+                            <div class="race-info-item">
+                                <div class="race-info-label">Record du tour</div>
+                                <div class="race-info-value">1:15.484</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 8 -->
+                <div class="race-card upcoming">
+                    <div class="race-image">
+                        <img src="https://www.formula1.com/content/dam/fom-website/2018-redesign-assets/Track%20icons%204x3/Monaco%20carbon.png.transform/8col/image.png" alt="Circuit de Monaco">
+                        <div class="race-date">24-26 Mai 2024</div>
+                        <div class="race-status status-upcoming">À venir</div>
+                    </div>
+                    <div class="race-content">
+                        <h3 class="race-name">Grand Prix de Monaco</h3>
+                        <p class="race-location">Circuit de Monaco</p>
+                        <div class="race-info">
+                            <div class="race-info-item">
+                                <div class="race-info-label">Tours</div>
+                                <div class="race-info-value">78</div>
+                            </div>
+                            <div class="race-info-item">
+                                <div class="race-info-label">Distance</div>
+                                <div class="race-info-value">260.286 km</div>
+                            </div>
+                            <div class="race-info-item">
+                                <div class="race-info-label">Vainqueur 2023</div>
+                                <div class="race-info-value">M. Verstappen</div>
+                            </div>
+                            <div class="race-info-item">
+                                <div class="race-info-label">Record du tour</div>
+                                <div class="race-info-value">1:12.909</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Informations Complémentaires -->
+    <section class="calendar-info-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Informations Pratiques</h2>
+            </div>
+            <div class="info-grid">
+                <div class="info-card animate-on-scroll">
+                    <div class="info-icon">
+                        <i class="fas fa-ticket-alt"></i>
+                    </div>
+                    <h3>Billets</h3>
+                    <p>Achetez vos billets pour assister aux Grands Prix de Formule 1 sur le site officiel ou auprès des revendeurs agréés.</p>
+                    <a href="#" class="info-link">Acheter des billets</a>
+                </div>
+                <div class="info-card animate-on-scroll delay-1">
+                    <div class="info-icon">
+                        <i class="fas fa-plane"></i>
+                    </div>
+                    <h3>Voyages</h3>
+                    <p>Organisez votre voyage pour assister aux courses avec nos partenaires de voyage officiels.</p>
+                    <a href="#" class="info-link">Forfaits voyage</a>
+                </div>
+                <div class="info-card animate-on-scroll delay-2">
+                    <div class="info-icon">
+                        <i class="fas fa-tv"></i>
+                    </div>
+                    <h3>Diffusion TV</h3>
+                    <p>Retrouvez les horaires de diffusion des courses sur les chaînes partenaires dans votre pays.</p>
+                    <a href="#" class="info-link">Guide TV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="../Assets/Images/Logo_F1.png" alt="Formula 1 Logo">
+                    <p>Le championnat du monde de Formule 1</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>Navigation</h3>
+                        <ul>
+                            <li><a href="../index.html">Accueil</a></li>
+                            <li><a href="teams.html">Équipes</a></li>
+                            <li><a href="calendar.html">Calendrier</a></li>
+                            <li><a href="standings.html">Classements</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Suivez-nous</h3>
+                        <div class="social-links">
+                            <a href="#" class="social-link">Facebook</a>
+                            <a href="#" class="social-link">Twitter</a>
+                            <a href="#" class="social-link">Instagram</a>
+                            <a href="#" class="social-link">YouTube</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Formula One World Championship Limited. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../JavaScript/main.js"></script>
+</body>
+</html>

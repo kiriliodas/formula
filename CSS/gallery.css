@@ -1,0 +1,135 @@
+/* Styles pour la galerie d'images et les sections de détail */
+
+.team-gallery {
+  margin-bottom: 3rem;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.gallery-item {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: transform var(--transition-speed) ease,
+    box-shadow var(--transition-speed) ease;
+  height: 200px;
+}
+
+.gallery-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3), 0 0 15px var(--glow-color);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+/* Styles pour la section voiture */
+.team-car {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  align-items: center;
+}
+
+.car-image {
+  text-align: center;
+}
+
+.car-image img {
+  max-width: 100%;
+  transition: transform var(--transition-speed) ease,
+    filter var(--transition-speed) ease;
+}
+
+.car-image img:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 15px var(--glow-color));
+}
+
+.car-specs {
+  background: linear-gradient(
+    145deg,
+    rgba(35, 35, 45, 0.9),
+    rgba(25, 25, 35, 0.9)
+  );
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.car-spec-item {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.car-spec-item:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.car-spec-label {
+  font-size: 0.8rem;
+  color: #ccc;
+  margin-bottom: 0.2rem;
+  text-transform: uppercase;
+}
+
+.car-spec-value {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/* Styles pour l'histoire de l'équipe */
+.team-history {
+  background: linear-gradient(
+    145deg,
+    rgba(35, 35, 45, 0.9),
+    rgba(25, 25, 35, 0.9)
+  );
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-bottom: 3rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: transform var(--transition-speed) ease,
+    box-shadow var(--transition-speed) ease;
+}
+
+.team-history:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3), 0 0 15px var(--glow-color);
+}
+
+.team-history p {
+  margin-bottom: 1rem;
+  line-height: 1.8;
+}
+
+.team-history p:last-child {
+  margin-bottom: 0;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .team-car {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+}

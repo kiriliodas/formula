@@ -1,0 +1,39 @@
+/* Supprime les marges et paddings par défaut */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Réinitialise la taille de la police */
+html {
+  font-size: 16px;
+}
+
+/* Enlève le style par défaut des listes */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Enlève la décoration des liens */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Force les images à ne pas dépasser leur conteneur */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Réinitialise les titres pour une base uniforme */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}

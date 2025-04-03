@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formula 1 - Le Championnat du Monde</title>
+    <meta
+      name="description"
+      content="Découvrez toute l'actualité de la Formule 1, les équipes, les pilotes, le calendrier des courses et les classements."
+    />
+    <link rel="stylesheet" href="CSS/reset.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/teams.css" />
+    <link rel="stylesheet" href="CSS/calendar.css" />
+    <link rel="stylesheet" href="CSS/standings.css" />
+    <link rel="stylesheet" href="CSS/animations.css" />
+    <link rel="stylesheet" href="CSS/news.css" />
+    <link rel="stylesheet" href="CSS/footer.css" />
+    <link rel="icon" href="Assets/Images/Logo_F1.png" type="image/png" />
+  </head>
+  <body>
+    <!-- Header et Navigation -->
+    <header>
+      <div class="header-container">
+        <a href="index.html" class="logo">
+          <img src="Assets/Images/Logo_F1.png" alt="Formula 1 Logo" />
+        </a>
+        <nav>
+          <ul>
+            <li><a href="#teams">Équipes</a></li>
+            <li><a href="#calendar">Calendrier</a></li>
+            <li><a href="#standings">Classements</a></li>
+            <li><a href="#news">Actualités</a></li>
+          </ul>
+        </nav>
+        <button class="mobile-menu-btn">
+          <span>&#9776;</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Formula 1</h1>
+        <p>
+          Bienvenue dans l'univers palpitant de la Formule 1, où vitesse,
+          technologie et talent se rencontrent sur les circuits les plus
+          emblématiques du monde.
+        </p>
+        <a href="#teams" class="cta-button">Découvrir les équipes</a>
+      </div>
+    </section>
+
+    <!-- Section Équipes -->
+    <section id="teams" class="teams-section">
+      <div class="container teams-container">
+        <div class="section-title">
+          <h2>Les Équipes</h2>
+        </div>
+        <div class="teams-grid">
+          <!-- Oracle Red Bull Racing -->
+          <div class="team-card">
+            <div class="team-header">
+              <img
+                src="Assets/Images/Team/Oracle Redbull Racing/Logo_Redbull.png"
+                alt="Red Bull Racing Logo"
+                class="team-logo"
+              />
+              <h3 class="team-name">Oracle Red Bull Racing</h3>
+            </div>
+            <div class="drivers-container">
+              <div class="driver">
+                <img
+                  src="Assets/Images/Team/Oracle Redbull Racing/Max Verstappen/Max_Verstappen_Portrait_1.png"
+                  alt="Max Verstappen"
+                  class="driver-image"
+                />
+                <div class="driver-info">
+                  <h3>Max Verstappen</h3>
+                  <p>Pays-Bas</p>
+                </div>
+                <div class="driver-number">1</div>
+              </div>
+              <div class="driver">
+                <img
+                  src="Assets/Images/Team/Oracle Redbull Racing/Liam Lawson/Liam_Lawson_Portrait_1.png"
+                  alt="Liam Lawson"
+                  class="driver-image"
+                />
+                <div class="driver-info">
+                  <h3>Liam Lawson</h3>
+                  <p>Nouvelle-Zélande</p>
+                </div>
+                <div class="driver-number">15</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Scuderia Ferrari -->
+          <div class="team-card">
+            <div class="team-header">
+              <img
+                src="Assets/Images/Team/Scuderia Ferrari/Logo_Scuderia_Ferrari.png"
+                alt="Scuderia Ferrari Logo"
+                class="team-logo"
+              />
+              <h3 class="team-name">Scuderia Ferrari</h3>
+            </div>
+            <div class="drivers-container">
+              <div class="driver">
+                <img
+                  src="Assets/Images/Team/Scuderia Ferrari/Charles Leclerc/Charles Leclerc Portrait 1.png"
+                  alt="Charles Leclerc"
+                  class="driver-image"
+                />
+                <div class="driver-info">
+                  <h3>Charles Leclerc</h3>
+                  <p>Monaco</p>
+                </div>
+                <div class="driver-number">16</div>
+              </div>
+              <div class="driver">
+                <img
+                  src="Assets/Images/Team/Scuderia Ferrari/Lewis Hamilton/Lewis Hamilton Portrait 1.png"
+                  alt="Lewis Hamilton"
+                  class="driver-image"
+                />
+                <div class="driver-info">
+                  <h3>Lewis Hamilton</h3>
+                  <p>Royaume-Uni</p>
+                </div>
+                <div class="driver-number">44</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- McLaren Racing -->
+          <div class="team-card">
+            <div class="team-header">
+              <img
+                src="Assets/Images/Team/McLaren Racing/Logo_McLaren.png"
+                alt="McLaren Logo"
+                class="team-logo"
+              />
+              <h3 class="team-name">McLaren Racing</h3>
+            </div>
+            <div class="drivers-container">
+              <div class="driver">
+                <img
+                  src="Assets/Images/Team/McLaren Racing/Lando Norris/Lando_Norris_Portrait_1.png"
+                  alt="Lando Norris"
+                  class="driver-image"
+                />
+                <div class="driver-info">
+                  <h3>Lando Norris</h3>
+                  <p>Royaume-Uni</p>
+                </div>
+                <div class="driver-number">4</div>
+              </div>
+              <div class="driver">
+                <img
+                  src="Assets/Images/Team/McLaren Racing/Oscar Piastri/Oscar_Piastri_Portrait_1.png"
+                  alt="Oscar Piastri"
+                  class="driver-image"
+                />
+                <div class="driver-info">
+                  <h3>Oscar Piastri</h3>
+                  <p>Australie</p>
+                </div>
+                <div class="driver-number">81</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center" style="margin-top: 3rem; text-align: center">
+          <a href="HTML/teams.html" class="cta-button"
+            >Voir toutes les équipes</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Calendrier -->
+    <section id="calendar" class="calendar-section">
+      <div class="container calendar-container">
+        <div class="section-title">
+          <h2>Calendrier 2024</h2>
+        </div>
+        <div class="calendar-filters">
+          <button class="filter-btn active">Toutes les courses</button>
+          <button class="filter-btn">À venir</button>
+          <button class="filter-btn">Terminées</button>
+        </div>
+        <div class="races-grid">
+          <!-- Course 1 -->
+          <div class="race-card">
+            <div class="race-image">
+              <img
+                src="https://www.formula1.com/content/dam/fom-website/2018-redesign-assets/Track%20icons%204x3/Bahrain%20carbon.png.transform/8col/image.png"
+                alt="Circuit de Bahreïn"
+              />
+              <div class="race-date">2-4 Mars 2024</div>
+            </div>
+            <div class="race-content">
+              <h3 class="race-name">Grand Prix de Bahreïn</h3>
+              <p class="race-location">Circuit International de Bahreïn</p>
+              <div class="race-info">
+                <div class="race-info-item">
+                  <div class="race-info-label">Tours</div>
+                  <div class="race-info-value">57</div>
+                </div>
+                <div class="race-info-item">
+                  <div class="race-info-label">Distance</div>
+                  <div class="race-info-value">308.238 km</div>
+                </div>
+                <div class="race-info-item">
+                  <div class="race-info-label">Vainqueur 2023</div>
+                  <div class="race-info-value">M. Verstappen</div>
+                </div>
+                <div class="race-info-item">
+                  <div class="race-info-label">Record du tour</div>
+                  <div class="race-info-value">1:31.447</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Course 2 -->
+          <div class="race-card">
+            <div class="race-image">
+              <img
+                src="https://www.formula1.com/content/dam/fom-website/2018-redesign-assets/Track%20icons%204x3/Saudi%20Arabia%20carbon.png.transform/8col/image.png"
+                alt="Circuit de Jeddah"
+              />
+              <div class="race-date">9-11 Mars 2024</div>
+            </div>
+            <div class="race-content">
+              <h3 class="race-name">Grand Prix d'Arabie Saoudite</h3>
+              <p class="race-location">Circuit de la Corniche de Jeddah</p>
+              <div class="race-info">
+                <div class="race-info-item">
+                  <div class="race-info-label">Tours</div>
+                  <div class="race-info-value">50</div>
+                </div>
+                <div class="race-info-item">
+                  <div class="race-info-label">Distance</div>
+                  <div class="race-info-value">308.450 km</div>
+                </div>
+                <div class="race-info-item">
+                  <div class="race-info-label">Vainqueur 2023</div>
+                  <div class="race-info-value">S. Perez</div>
+                </div>
+                <div class="race-info-item">
+                  <div class="race-info-label">Record du tour</div>
+                  <div class="race-info-value">1:30.734</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Course 3 -->
+          <div class="race-card">
+            <div class="race-image">
+              <img
+                src="https://www.formula1.com/content/dam/fom-website/2018-redesign-assets/Track%20icons%204x3/Australia%20carbon.png.transform/8col/image.png"
+                alt="Circuit d'Albert Park"
+              />
+              <div class="race-date">23-25 Mars 2024</div>
+            </div>
+            <div class="race-content">
+              <h3 class="race-name">Grand Prix d'Australie</h3>
+              <p class="race-location">Circuit d'Albert Park</p>
+              <div class="race-info">
+                <div class="race-info-item">
+                  <div class="race-info-label">Tours</div>
+                  <div class="race-info-value">58</div>
+                </div>
+                <div class="race-info-item">
+                  <div class="race-info-label">Distance</div>
+                  <div class="race-info-value">306.124 km</div>
+                </div>
+                <div class="race-info-item">
+                  <div class="race-info-label">Vainqueur 2023</div>
+                  <div class="race-info-value">M. Verstappen</div>
+                </div>
+                <div class="race-info-item">
+                  <div class="race-info-label">Record du tour</div>
+                  <div class="race-info-value">1:20.235</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center" style="margin-top: 3rem; text-align: center">
+          <a href="HTML/calendar.html" class="cta-button"
+            >Voir le calendrier complet</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Classements -->
+    <section id="standings" class="standings-section">
+      <div class="container standings-container">
+        <div class="section-title">
+          <h2>Classements</h2>
+        </div>
+        <div class="standings-tabs">
+          <button class="tab-btn active">Pilotes</button>
+          <button class="tab-btn">Constructeurs</button>
+        </div>
+        <div class="tab-content active">
+          <div class="standings-table-container">
+            <table class="standings-table">
+              <thead>
+                <tr>
+                  <th>Pos</th>
+                  <th>Pilote</th>
+                  <th>Équipe</th>
+                  <th>Points</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="position-cell position-1">1</td>
+                  <td class="driver-cell">
+                    <img
+                      src="Assets/Images/Team/Oracle Redbull Racing/Max Verstappen/Max_Verstappen_Portrait_1.png"
+                      alt="Max Verstappen"
+                    />
+                    <span>Max Verstappen</span>
+                  </td>
+                  <td class="team-cell">
+                    <span
+                      class="team-color"
+                      style="background-color: #0600ef"
+                    ></span>
+                    <span>Red Bull Racing</span>
+                  </td>
+                  <td class="points-cell">575</td>
+                </tr>
+                <tr>
+                  <td class="position-cell position-2">2</td>
+                  <td class="driver-cell">
+                    <img
+                      src="Assets/Images/Team/McLaren Racing/Lando Norris/Lando_Norris_Portrait_1.png"
+                      alt="Lando Norris"
+                    />
+                    <span>Lando Norris</span>
+                  </td>
+                  <td class="team-cell">
+                    <span
+                      class="team-color"
+                      style="background-color: #ff8700"
+                    ></span>
+                    <span>McLaren</span>
+                  </td>
+                  <td class="points-cell">425</td>
+                </tr>
+                <tr>
+                  <td class="position-cell position-3">3</td>
+                  <td class="driver-cell">
+                    <img
+                      src="Assets/Images/Team/Scuderia Ferrari/Charles Leclerc/Charles Leclerc Portrait 1.png"
+                      alt="Charles Leclerc"
+                    />
+                    <span>Charles Leclerc</span>
+                  </td>
+                  <td class="team-cell">
+                    <span
+                      class="team-color"
+                      style="background-color: #dc0000"
+                    ></span>
+                    <span>Ferrari</span>
+                  </td>
+                  <td class="points-cell">410</td>
+                </tr>
+                <tr>
+                  <td class="position-cell">4</td>
+                  <td class="driver-cell">
+                    <img
+                      src="Assets/Images/Team/McLaren Racing/Oscar Piastri/Oscar_Piastri_Portrait_1.png"
+                      alt="Oscar Piastri"
+                    />
+                    <span>Oscar Piastri</span>
+                  </td>
+                  <td class="team-cell">
+                    <span
+                      class="team-color"
+                      style="background-color: #ff8700"
+                    ></span>
+                    <span>McLaren</span>
+                  </td>
+                  <td class="points-cell">380</td>
+                </tr>
+                <tr>
+                  <td class="position-cell">5</td>
+                  <td class="driver-cell">
+                    <img
+                      src="Assets/Images/Team/Scuderia Ferrari/Lewis Hamilton/Lewis Hamilton Portrait 1.png"
+                      alt="Lewis Hamilton"
+                    />
+                    <span>Lewis Hamilton</span>
+                  </td>
+                  <td class="team-cell">
+                    <span
+                      class="team-color"
+                      style="background-color: #dc0000"
+                    ></span>
+                    <span>Ferrari</span>
+                  </td>
+                  <td class="points-cell">350</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="text-center" style="margin-top: 2rem; text-align: center">
+            <a href="HTML/standings.html" class="cta-button"
+              >Voir le classement complet</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Actualités -->
+    <section id="news" class="news-section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Dernières Actualités</h2>
+        </div>
+        <div class="news-grid">
+          <div class="news-card">
+            <div class="news-image">
+              <img
+                src="https://www.formula1.com/content/dam/fom-website/manual/Misc/2022manual/2022Races/EmiliaRomagnaGP/Sunday/GettyImages-1395239296.jpg.transform/9col/image.jpg"
+                alt="Actualité F1"
+              />
+              <div class="news-date">15 Novembre 2023</div>
+            </div>
+            <div class="news-content">
+              <h3 class="news-title">
+                Verstappen remporte son 4ème titre mondial
+              </h3>
+              <p class="news-excerpt">
+                Max Verstappen a été couronné champion du monde pour la
+                quatrième fois consécutive après une saison dominante.
+              </p>
+              <a href="#" class="news-link">Lire la suite</a>
+            </div>
+          </div>
+          <div class="news-card">
+            <div class="news-image">
+              <img
+                src="https://www.formula1.com/content/dam/fom-website/manual/Misc/2022manual/WinterFebruary/Ferrari/ferrari-f1-75-front-three-quarter.jpg.transform/9col/image.jpg"
+                alt="Actualité F1"
+              />
+              <div class="news-date">10 Novembre 2023</div>
+            </div>
+            <div class="news-content">
+              <h3 class="news-title">
+                Ferrari dévoile sa nouvelle monoplace pour 2024
+              </h3>
+              <p class="news-excerpt">
+                L'écurie italienne a présenté sa nouvelle voiture avec laquelle
+                elle espère défier Red Bull la saison prochaine.
+              </p>
+              <a href="#" class="news-link">Lire la suite</a>
+            </div>
+          </div>
+          <div class="news-card">
+            <div class="news-image">
+              <img
+                src="https://www.formula1.com/content/dam/fom-website/manual/Misc/2022manual/2022Races/MiamiGP/Sunday/GettyImages-1240493158.jpg.transform/9col/image.jpg"
+                alt="Actualité F1"
+              />
+              <div class="news-date">5 Novembre 2023</div>
+            </div>
+            <div class="news-content">
+              <h3 class="news-title">
+                Le calendrier 2024 dévoilé avec 24 courses
+              </h3>
+              <p class="news-excerpt">
+                La FIA a confirmé le calendrier de la saison 2024 qui comportera
+                un record de 24 Grands Prix.
+              </p>
+              <a href="#" class="news-link">Lire la suite</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <img src="Assets/Images/Logo_F1.png" alt="Formula 1 Logo" />
+            <p>Le championnat du monde de Formule 1</p>
+          </div>
+          <div class="footer-links">
+            <div class="footer-column">
+              <h3>Navigation</h3>
+              <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="HTML/teams.html">Équipes</a></li>
+                <li><a href="HTML/calendar.html">Calendrier</a></li>
+                <li><a href="HTML/standings.html">Classements</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h3>Suivez-nous</h3>
+              <div class="social-links">
+                <a href="#" class="social-link">Facebook</a>
+                <a href="#" class="social-link">Twitter</a>
+                <a href="#" class="social-link">Instagram</a>
+                <a href="#" class="social-link">YouTube</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; 2024 Formula One World Championship Limited. Tous droits
+            réservés.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="JavaScript/main.js"></script>
+  </body>
+</html>

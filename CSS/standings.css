@@ -1,0 +1,522 @@
+/* Styles pour la section des classements et statistiques */
+
+.standings-section {
+    background-color: var(--f1-dark);
+    position: relative;
+}
+
+.standings-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://www.formula1.com/content/dam/fom-website/manual/Misc/2022manual/2022Races/MiamiGP/Sunday/GettyImages-1240493158.jpg.transform/9col/image.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.1;
+    z-index: 0;
+}
+
+.standings-container {
+    position: relative;
+    z-index: 1;
+}
+
+/* Onglets de navigation */
+.standings-tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.tab-btn {
+    background: none;
+    border: none;
+    color: var(--f1-light);
+    padding: 0.8rem 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    transition: all var(--transition-speed) ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.tab-btn::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 3px;
+    background-color: var(--f1-red);
+    transition: width var(--transition-speed) ease;
+    box-shadow: 0 0 8px var(--glow-color);
+}
+
+.tab-btn:hover, .tab-btn.active {
+    color: var(--f1-red);
+}
+
+.tab-btn:hover::after, .tab-btn.active::after {
+    width: 80%;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+    animation: fadeIn 0.5s ease-out;
+}
+
+/* Tableau des classements */
+.standings-table-container {
+    overflow-x: auto;
+    margin-top: 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.standings-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: linear-gradient(145deg, rgba(35, 35, 45, 0.9), rgba(25, 25, 35, 0.9));
+    overflow: hidden;
+}
+
+.standings-table th,
+.standings-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.standings-table th {
+    background-color: var(--f1-gray);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+}
+
+.standings-table tr:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.standings-table tr:last-child td {
+    border-bottom: none;
+}
+
+.position-cell {
+    font-weight: bold;
+    font-size: 1.2rem;
+    width: 50px;
+}
+
+.position-1, .position-2, .position-3 {
+    font-size: 1.4rem;
+}
+
+.position-1 {
+    color: gold;
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.7);
+}
+
+.position-2 {
+    color: silver;
+    text-shadow: 0 0 10px rgba(192, 192, 192, 0.7);
+}
+
+.position-3 {
+    color: #cd7f32; /* bronze */
+    text-shadow: 0 0 10px rgba(205, 127, 50, 0.7);
+}
+
+.driver-cell, .team-cell {
+    display: flex;
+    align-items: center;
+}
+
+.driver-cell img, .team-cell img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 0.8rem;
+    object-fit: cover;
+}
+
+.team-cell img {
+    border-radius: 0;
+}
+
+.team-color {
+    display: inline-block;
+    width: 4px;
+    height: 20px;
+    margin-right: 10px;
+    border-radius: 2px;
+}
+
+.points-cell {
+    font-weight: bold;
+    color: var(--f1-red);
+}
+
+/* Graphiques et statistiques */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.stat-card {
+    background: linear-gradient(145deg, rgba(35, 35, 45, 0.9), rgba(25, 25, 35, 0.9));
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.stat-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3), 0 0 15px var(--glow-color);
+}
+
+.stat-header {
+    margin-bottom: 1rem;
+}
+
+.stat-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.stat-subtitle {
+    font-size: 0.9rem;
+    color: #ccc;
+    margin: 0.3rem 0 0;
+}
+
+.stat-content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chart-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+/* Graphique circulaire */
+.pie-chart {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: conic-gradient(
+        var(--f1-red) 0% 25%,
+        #3498db 25% 40%,
+        #2ecc71 40% 55%,
+        #f39c12 55% 70%,
+        #9b59b6 70% 85%,
+        #1abc9c 85% 100%
+    );
+    position: relative;
+    margin: 0 auto;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    transition: transform var(--transition-speed) ease;
+}
+
+.stat-card:hover .pie-chart {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4), 0 0 15px var(--glow-color);
+}
+
+.pie-chart::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    background-color: var(--f1-dark);
+    border-radius: 50%;
+}
+
+.pie-chart-label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.pie-chart-value {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 0;
+    color: var(--f1-red);
+}
+
+.pie-chart-text {
+    font-size: 0.8rem;
+    color: #ccc;
+    margin: 0;
+}
+
+/* Graphique à barres */
+.bar-chart {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.bar {
+    width: 12%;
+    background: linear-gradient(to top, var(--f1-red), #ff6b6b);
+    border-radius: 5px 5px 0 0;
+    position: relative;
+    transition: height 0.5s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.stat-card:hover .bar {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3), 0 0 10px var(--glow-color);
+}
+
+.bar-label {
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.8rem;
+    color: #ccc;
+    text-align: center;
+    width: 100%;
+}
+
+.bar-value {
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: var(--f1-light);
+}
+
+/* Légende */
+.chart-legend {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+.legend-color {
+    width: 12px;
+    height: 12px;
+    border-radius: 3px;
+    margin-right: 0.5rem;
+}
+
+.legend-text {
+    font-size: 0.8rem;
+    color: #ccc;
+}
+
+/* Comparaison de pilotes */
+.driver-comparison {
+    margin-top: 3rem;
+}
+
+.comparison-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    justify-content: center;
+}
+
+.form-group {
+    flex: 1;
+    min-width: 250px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-select {
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 5px;
+    background-color: var(--f1-gray);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--f1-light);
+    font-family: inherit;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%23fff' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: calc(100% - 1rem) center;
+    cursor: pointer;
+    transition: border-color var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+}
+
+.form-select:focus {
+    outline: none;
+    border-color: var(--f1-red);
+    box-shadow: 0 0 0 2px rgba(225, 6, 0, 0.3);
+}
+
+.compare-btn {
+    background-color: var(--f1-red);
+    color: white;
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all var(--transition-speed) ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    align-self: flex-end;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.compare-btn:hover {
+    background-color: #c10500;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3), 0 0 15px var(--glow-color);
+}
+
+.comparison-results {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.driver-stats {
+    background: linear-gradient(145deg, rgba(35, 35, 45, 0.9), rgba(25, 25, 35, 0.9));
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+}
+
+.driver-stats:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 0 0 15px var(--glow-color);
+}
+
+.driver-stats-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.driver-stats-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1rem;
+    border: 2px solid var(--f1-red);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.driver-stats-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0 0 0.3rem;
+}
+
+.driver-stats-team {
+    font-size: 0.9rem;
+    color: #ccc;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.driver-stats-team-color {
+    display: inline-block;
+    width: 4px;
+    height: 16px;
+    margin-right: 8px;
+    border-radius: 2px;
+}
+
+.stats-grid-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.stats-grid-item:last-child {
+    border-bottom: none;
+}
+
+.stats-label {
+    color: #ccc;
+}
+
+.stats-value {
+    font-weight: bold;
+}
+
+.stats-highlight {
+    color: var(--f1-red);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .standings-tabs {
+        flex-wrap: wrap;
+    }
+    
+    .tab-btn {
+        padding: 0.8rem 1rem;
+    }
+    
+    .standings-table th,
+    .standings-table td {
+        padding: 0.8rem 0.5rem;
+        font-size: 0.9rem;
+    }
+    
+    .comparison-results {
+        grid-template-columns: 1fr;
+    }
+}
